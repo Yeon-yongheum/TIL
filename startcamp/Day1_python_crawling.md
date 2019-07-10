@@ -4,14 +4,14 @@
 
 1. 저장
 
-   ```
+   ```python
    # 저장은 =을 통해서 한다.
    dust = 64 # 숫자(integer)
    name = '홍길동' # 문자열(string)
    is_summer = True # 참/거짓, Boolean(True/False)
    ```
 
-   ```
+   ```python
    # 리스트 활용법
    my_list = [1, 2, 3, '정지수', '염겨레']
    print(my_list[0]) # => 1
@@ -22,7 +22,7 @@
 
 2. 조건문
 
-   ```
+   ```python
    if dust > 150:
        print('매우나쁨')
    elif dust > 80:
@@ -33,7 +33,7 @@
 
 3. 반복문
 
-   ```
+   ```python
    lunch_box = ['짬뽕', '류산슬덮밥', '돈육제육..']
    # 정해진 리스트 반복
    for menu in lunch_box:
@@ -49,7 +49,7 @@
 
    > 내장함수는 별도로 import 구문이 필요없다.
 
-   ```
+   ```python
    print('hi')
    print(max([2, 4, 1])) #=> 4
    print(min([1, 2, 5])) #=> 1
@@ -63,7 +63,7 @@
    >
    > 다만, 파이썬을 설치하면 그냥 불러서 쓸 수 있다.
 
-   ```
+   ```python
    import random
    numbers = range(1, 46)
    lotto = random.sample(numbers, 6)
@@ -76,11 +76,11 @@
 
    `pip install 패키지명` 으로 설치를 한다.
 
-   ```
+   ```bash
    $ pip install requests
    ```
 
-   ```
+   ```python
    import requests
    requests.get(url)
    ```
@@ -93,14 +93,14 @@
 
    - `bs4`: 문자열을 html으로 구조화(파싱)를 해주는 패키지
 
-     ```
+     ```bash
      $ pip install requests
      $ pip install bs4
      ```
 
 2. 네이버에서 코스피지수 가져오기
 
-   ```
+   ```python
    # 0. 활용할 패키지를 불러온다.
    import requests
    from bs4 import BeautifulSoup

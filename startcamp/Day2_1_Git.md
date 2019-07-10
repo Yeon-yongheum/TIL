@@ -11,7 +11,7 @@
 
 - 로컬에서 처음 Git을 활용하는 경우 아래의 설정을 해줘야 한다.
 
-  ```
+  ```bash
   $ git config --global user.name '<Github username>'
   $ git config --global user.email '<Github email>'
   ```
@@ -22,7 +22,7 @@
 
 1. Git 저장소 설정
 
-   ```
+   ```bash
    $ git init
    Initialized empty Git repository in C:/Users/student/Desktop/새 폴더/.git/
    
@@ -35,7 +35,7 @@
 
 2. Staging area(커밋 대상 목록)에 담기
 
-   ```
+   ```bash
    $ git add .
    $ git add a.txt
    $ git add startcamp/
@@ -45,7 +45,7 @@
 
    - 반드시 `git status` 명령어를 통해 내가 원하는 파일이 반영되었는지 확인한다.
 
-     ```
+     ```bash
      $ git status
      ...
      Changes to be committed:
@@ -56,7 +56,7 @@
 
 3. 이력 남기기(`commit`)
 
-   ```
+   ```bash
    $ git commit -m '커밋메시지'
    [master (root-commit) 6e5ea06] a.txt 생성
     1 file changed, 0 insertions(+), 0 deletions(-)
@@ -69,7 +69,7 @@
 
 4. 커밋이력 확인하기
 
-   ```
+   ```bash
    $ git log
    commit 6e5ea0626eb3216c9683eabe1aa0b6c97d412588 (HEAD -> master)
    Author: edutak <edutak.ssafy@gmail.com>
@@ -85,7 +85,7 @@
 
    **항상 모든 명령어를 입력하기 전에 아래의 명령어를 입력하는 습관을 들이자!**
 
-   ```
+   ```bash
    $ git status
    ```
 
@@ -95,7 +95,7 @@
 
 1. 원격 저장소(`remote repository`) 설정
 
-   ```
+   ```bash
    $ git remote add origin __https://github.com__
    ```
 
@@ -105,13 +105,13 @@
 
    - 현재 설정된 원격 저장소를 확인하기 위해서는 아래의 명령어를 사용한다.
 
-     ```
+     ```bash
      $ git remote -v
      ```
 
 2. 원격 저장소로 `push`
 
-   ```
+   ```bash
    $ git push origin master
    ```
 
@@ -119,7 +119,7 @@
 
 3. 원격 저장소에서 `pull`
 
-   ```
+   ```bash
    $ git pull origin master
    ```
 
@@ -127,7 +127,7 @@
 
 4. `clone`
 
-   ```
+   ```bash
    $ git clone __url__
    ```
 

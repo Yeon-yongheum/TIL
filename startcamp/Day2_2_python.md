@@ -6,15 +6,15 @@
   
   - `getcwd()` : 현재 working directory의 절대위치를 나타낸다.
   
-  ```
+  ```python
     import os
     os.getcwd()
     #=> 'C:\\Users\\student\\Desktop\\startcamp'
-    ```
+  ```
   
   - `chdir(경로)` : 해당하는 `경로` 로 이동한다.
   
-    ```
+    ```python
     import os
     os.chdir('./dummy/')
     print(os.getcwd())
@@ -23,7 +23,7 @@
   
   - `listdir(경로)` : 해당하는 `경로` 에 있는 파일 및 폴더 이름들을 리스트로 반환한다.
   
-    ```
+    ```python
     import os
     print(os.listdir('.'))
     #=> ['a.py', 'b.py', 'day2']
@@ -31,7 +31,7 @@
   
   - `rename(기존 파일명, 변경할 파일명)` : `기존 파일명`을 `변경할 파일명` 으로 변경한다.
   
-    ```
+    ```python
     import os
     
     for filename in os.listdir('.'):
@@ -44,13 +44,13 @@
   
   1. 기본 활용법
   
-     ```
+     ```python
      f = open('a.txt', 'w', encoding='utf-8')
      f.write('안녕하세요')
      f.close()
      ```
   
-     - ```
+     - ```python
        open(파일명, 옵션, 인코딩)
        ```
   
@@ -62,7 +62,7 @@
   
   2. 컨택스트 매니저 `with` 구문 활용
   
-     ```
+     ```python
      with open('a.txt', 'w', encoding='utf-8') as f:
          f.write('hi')
      ```
@@ -71,7 +71,7 @@
   
   - `read()` : 전체 내용을 하나의 문자열(`string`)을 반환한다.
   
-    ```
+    ```python
     with open('a.txt', 'r', encoding='utf-8') as f:
         txt = f.read()
     print(txt)
@@ -79,7 +79,7 @@
   
   - `readlines()` : 각 라인의 내용을 원소로 가지는 리스트를 반환한다.
   
-    ```
+    ```python
     with open('a.txt', 'r', encoding='utf-8') as f:
         lines = f.readlines()
         
