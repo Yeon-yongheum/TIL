@@ -6,11 +6,11 @@ key = ''
 
 movieCd = []
 
-with open('boxoffice.csv', 'r', encoding='utf-8') as f:
+with open('boxoﬃce.csv', 'r', encoding='utf-8') as f:
     
     reader = csv.DictReader(f)
     for row in reader:
-        movieCd.append(row['대표코드'])
+        movieCd.append(row['movieCd'])
 print(movieCd)
 
 response = {}

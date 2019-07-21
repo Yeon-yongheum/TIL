@@ -1,9 +1,8 @@
 import requests
 import pprint
 import csv
-from decouple import config
 
-key = config('KEY')
+key =''
 
 names = []
 

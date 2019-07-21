@@ -32,7 +32,7 @@ for i in range(50):
                                                 '영화이름': movie.get('movieNm')
                                             }
     today = (today - td)
-with open('boxoﬃce.csv', 'w', encoding='utf-8') as f:
+with open('boxoffice.csv', 'w', encoding='utf-8') as f:
     fieldnames = {'영화코드', '영화이름', '누적관객수'} #여기만 변경
     csv_writer = csv.DictWriter(f, fieldnames=fieldnames)
     csv_writer.writeheader()
