@@ -2,7 +2,8 @@ import requests
 import json
 import csv
 import pprint
-key = ''
+from decouple import config
+key = config('key')
 
 movie_list = []
 with open('boxoffice.csv', 'r', encoding='utf-8') as f:

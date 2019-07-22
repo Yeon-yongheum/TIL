@@ -3,7 +3,8 @@ import requests
 import pprint
 import json
 import csv
-key = ''
+from decouple import config
+key = config('key')
 name_list = []
 
 with open('movie.csv', 'r', encoding='utf-8') as f:

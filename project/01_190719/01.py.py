@@ -10,7 +10,8 @@ import requests
 import json
 import csv
 import pprint
-key = ''
+from decouple import config
+key = config('key')
 today = datetime.date(2019,7,13)
 td=timedelta(days=7)
 movie_data = {}
