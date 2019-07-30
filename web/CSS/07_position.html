@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>position</title>
+  <link rel="stylesheet" href="07_style.css">
+</head>
+<body>
+  <div>static</div>
+  <div>static</div>
+
+
+  
+  <!-- position이 적혀있으면 모두 static이 아니다.!!!!!! -->
+  
+  
+
+  <!--
+    absolute는 부모 혹은 조상요소를 기준으로 위치.
+    (*가까운 조상 중에 static이 아닌 요소*)
+  -->
+  <!-- 
+    부모가 static이어서,
+    absolute1이 body를 기준으로 위치함.
+  -->
+  <div class="parent">
+    static
+    <div class="absolute">absolute1</div>
+  </div>
+  <!-- 
+    부모가 static이 아니어서,
+    absolute2가 가까운 부모를 기준으로 위치함
+  -->
+  <div class="parent relative">
+    relative
+    <div class="absolute zindex">absolute2</div>
+  </div>
+
+  <div class="parent relative-move">
+      relative-move
+      <div class="absolute zindex">absolute3</div>
+  </div>
+  <!-- 2.relative
+    자기가 원래 있어야할 위치(static)을 기준으로 이동한다.
+  -->
+  <div class="relative-move2">relative-move</div>
+  <!-- 3. fixed
+    브라우저 위치에 따라 변경!
+  -->
+  <div class="fixed">브라우저따라</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  line-height: 100px
+}
+
+.parent {
+  background-color: #ff5000;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;  
+  left: 70px;
+  background-color: #ffff00;
+}
+
+.relative {
+  position: relative;
+  background-color: #00f300;
+}
+
+.relative-move {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  background-color: blue;
+}
+
+.relative-move2 {
+  position: relative;
+  top: 20px;
+  left: -10px;
+  background-color: purple;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+body {
+  height: 10000px;
+}
+
+.zindex {
+  z-index: 1;
+}
+
+.zindex-1000{
+  z-index: 1000;
+
+}
